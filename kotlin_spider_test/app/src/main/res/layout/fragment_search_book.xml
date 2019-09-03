@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="vm"
+            type="com.example.imac.kotlin_spider.ui.searchbook.SearchBookModel"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        >
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10sp"
+            android:text="@={vm.searchData}"
+            android:background="#ffffff"
+            android:id="@+id/search_data"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/search_data"
+            android:id="@+id/search_button"
+            android:onClick="@{()-> vm.onSearch(vm.data)}"
+            android:text="@string/search_book_search_button"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_button"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/fantasy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_fantasy"
+                    android:textColor="#ffffff"
+                    android:onClick="@{() ->vm.onFantasy(vm.data)}"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+                <Button
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_city"
+                    android:onClick="@{() ->vm.onCity(vm.data)}"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+                <Button
+                    android:id="@+id/martial_arts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_martial_arts"
+                    android:onClick="@{() ->vm.onMartialArts(vm.data)}"
+
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+                <Button
+                    android:id="@+id/military"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_military"
+                    android:onClick="@{() ->vm.onMilitary(vm.data)}"
+
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                >
+                <Button
+                    android:id="@+id/online_game_or_sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_online_game_or_sports"
+                    android:onClick="@{() ->vm.onOnlineGameOrSports(vm.data)}"
+
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+                <Button
+                    android:id="@+id/science_fiction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_science_fiction"
+                    android:onClick="@{() ->vm.onScienceFiction(vm.data)}"
+
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+                <Button
+                    android:id="@+id/anime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_anime"
+                    android:onClick="@{() ->vm.onAnime(vm.data)}"
+
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+                <Button
+                    android:id="@+id/end_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_book_end"
+                    android:onClick="@{() ->vm.onEndBook(vm.data)}"
+
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:background="@drawable/button_style"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

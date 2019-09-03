@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="hint_confirm">確定</string>
+    <string name="hint_cancel">取消</string>
+    <string name="link_api_url">    http://api.laifudao.com/open/ </string>
+</resources>

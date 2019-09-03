@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">kotlin_spider</string>
+    <!--main需要的字-->
+    <string name="title_personal_book">個人書架</string>
+    <string name="title_read_set">設定</string>
+    <string name="title_search_book">找書</string>
+    <string name="title_book_label">書籤</string>
+    <!--找書的按鈕-->
+    <string name="search_book_fantasy">玄幻奇幻</string>
+    <string name="search_book_city">都市言情</string>
+    <string name="search_book_martial_arts">武俠先俠</string>
+    <string name="search_book_military">軍事歷史</string>
+    <string name="search_book_online_game_or_sports">網遊競技</string>
+    <string name="search_book_science_fiction">科幻靈異</string>
+    <string name="search_book_anime">二次元</string>
+    <string name="search_book_end">完結本</string>
+    <string name="search_book_search_button">搜尋</string>
+</resources>
